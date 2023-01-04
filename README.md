@@ -13,4 +13,13 @@ The Capstone Project is about World Electricity Analyzes Using Python, Pandas, S
 - Microsoft Excel (for Visualization and insides).
 
 # Snapshot of Visualization:
-<img width="684" alt="image" src="https://user-images.githubusercontent.com/111861396/210594427-bbc1756b-0d01-480f-a830-7ae7648ef88a.png">
+- Shanpshot of Dashboard.
+<img width="684" alt="image" src="https://user-images.githubusercontent.com/111861396/210595226-b8a06dda-c9f2-4a02-ac22-b8878bdfe356.png">
+
+# Important Insights:
+- Production Of electricity Through Oil Majorly Increase in mid-1970s and slight decrease due to power transmission and distribusion losses of electricity increases.
+- 193 countries in 2020 with more than 75% access to rural electricity which is more than doubled from 92 countries in 1990.
+- The Production Of nuclear power has been increasing from 1970s to 2014s.
+- Country verses world Electricity gives the access of electricity of india compire to world electricity is less.
+- As per Visualization is clear that High income group from the country contribute more than 70% of production of nuclear energy.
+- North American, European & Central Asian regions have been majorly contributing in electricity production from nuclear energy.
