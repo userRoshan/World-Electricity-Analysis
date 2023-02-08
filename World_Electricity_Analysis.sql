@@ -63,7 +63,7 @@ select * from Final_nuclear
 
 --evolution of nuclear power in different regions
 
-select n.Year_Column, m.Region,AVG(n.Value_Column) as '%_of_access_of_nuclear_electricity' from Final_nuclear as n
+select n.Year_Column, m.Region,AVG(n.Value_Column) as 'avg_access_of_nuclear_electricity' from Final_nuclear as n
 join metadata as m on n.Country_Code=m.Country_Code
 where m.Region is not null
 group by m.Region,n.Year_Column
@@ -73,7 +73,7 @@ order by n.Year_Column
 
 ---evolution of nuclear power IncomeGroup -Wise comparison
 
-select n.Year_Column, m.IncomeGroup,AVG(n.Value_Column) as '%_of_access_of_nuclear_electricity' from Final_nuclear as n
+select n.Year_Column, m.IncomeGroup,AVG(n.Value_Column) as 'avg_of_access_of_nuclear_electricity' from Final_nuclear as n
 join metadata as m on n.Country_Code=m.Country_Code
 where m.IncomeGroup is not null
 group by m.IncomeGroup,n.Year_Column
@@ -82,8 +82,8 @@ order by n.Year_Column
 ---A chart to present the production of electricity across different sources (nuclear, oil, etc.) as
 ---a function of time
 
-select n.Year_Column,avg(n.Value_Column) as 'avg%_Electricity_Production _throught_Nuclear',
-avg(o.Value_Column) as 'avg%_Electricity_Production _throught_oil',avg(l.Value_Column) as 'avg%_of_ power transmission and distribution losses '  from  Final_nuclear as n
+select n.Year_Column,avg(n.Value_Column) as 'avg_Electricity_Production _throught_Nuclear',
+avg(o.Value_Column) as 'avg_Electricity_Production _throught_oil',avg(l.Value_Column) as 'avg_of_ power transmission and distribution losses '  from  Final_nuclear as n
 join Final_oil as o on n.Country_Code=o.Country_Code and n.Year_Column=o.Year_Column
 join Final_losses as l on o.Country_Code=l.Country_Code and l.Year_Column=o.Year_Column
 group by n.Year_Column
